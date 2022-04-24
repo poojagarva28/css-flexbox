@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>justify-content</title>
+    <style>
+      .flex-container {
+        background-color: skyblue;
+        display: flex;
+      }
+      .flex-container div {
+        color: white;
+        margin: 10px;
+        padding: 70px;
+        background-color: blue;
+      }
+      .center {
+        justify-content: center;
+      }
+      .flex-start {
+        justify-content: flex-start;
+      }
+      .flex-end {
+        justify-content: flex-end;
+      }
+      .space-around {
+        justify-content: space-around;
+      }
+      .space-between {
+        justify-content: space-between;
+      }
+      .space-evenly {
+        justify-content: space-evenly;
+      }
+      .flex-twist {
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>justify-content:center</h2>
+    <div class="flex-container center">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>justify-content:flex-start</h2>
+    <div class="flex-container flex-start">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>justify-content:flex-end</h2>
+    <div class="flex-container flex-end">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>justify-content:space-around</h2>
+    <div class="flex-container space-around">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>justify-content:space-between</h2>
+    <div class="flex-container space-between">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>justify-content:space-evenly</h2>
+    <div class="flex-container space-evenly">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>
+      justify-content:flex-end<br />
+      flex-direction:row-reverse
+    </h2>
+    <div class="flex-container flex-twist">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>

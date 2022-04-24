@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-content</title>
+    <style>
+      .flex-container {
+        background-color: skyblue;
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        overflow: scroll;
+      }
+      .flex-container div {
+        color: white;
+        margin: 5px;
+        padding: 20px 80px;
+        height: 10px;
+        width: 100%;
+        background-color: blue;
+      }
+      .flex-start {
+        align-content: flex-start;
+      }
+      .flex-end {
+        align-content: flex-end;
+      }
+      .flex-center {
+        align-content: center;
+      }
+      .space-around {
+        align-content: space-around;
+      }
+      .space-evenly {
+        align-content: space-evenly;
+      }
+      .space-between {
+        align-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>alilgn-items:stretch (default)</h2>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>alilgn-items:flex-start</h2>
+    <div class="flex-container flex-start">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>alilgn-items:flex-end</h2>
+    <div class="flex-container flex-end">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>alilgn-items:flex-center</h2>
+    <div class="flex-container flex-center">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>alilgn-items:space-around</h2>
+    <div class="flex-container space-around">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>alilgn-items:space-evenly</h2>
+    <div class="flex-container space-evenly">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>alilgn-items:space-between</h2>
+    <div class="flex-container space-between">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>

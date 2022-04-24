@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-items</title>
+    <style>
+      .flex-container {
+        background-color: skyblue;
+        display: flex;
+        height: 350px;
+      }
+      .flex-container div {
+        color: white;
+        margin: 10px;
+        width: 30px;
+        height: 30px;
+        padding: 70px;
+        text-align: center;
+        font-size: 28px;
+        background-color: blue;
+      }
+      .center {
+        align-items: center;
+      }
+      .flex-start {
+        align-items: flex-start;
+      }
+      .flex-end {
+        align-items: flex-end;
+      }
+      .baseline {
+        align-items: baseline;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>align-items:stretch (default)</h2>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>align-items:center</h2>
+    <div class="flex-container center">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>align-items:flex-start</h2>
+    <div class="flex-container flex-start">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>align-items:flex-end</h2>
+    <div class="flex-container flex-end">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <h2>align-items:baseline</h2>
+    <div class="flex-container baseline">
+      <div><h4>1</h4></div>
+      <div>
+        <h2>2</h2>
+      </div>
+      <div><h5>3</h5></div>
+      <div>4</div>
+      <div><h1>5</h1></div>
+    </div>
+  </body>
+</html>
